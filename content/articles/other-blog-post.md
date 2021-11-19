@@ -3,10 +3,8 @@ title: Themosis
 description: Learning how to use @nuxt/content to create a blog post
 img: v3.png
 alt: My first blog Post
-author:
-    name: Benjamin
-    bio: All about Benjamin
-    image: https://images.unsplash.com/.....
+date: 2021-11-19T15:51:26.054Z
+author: Antoine Queru
 ---
 
 Themosis framework - Theme
