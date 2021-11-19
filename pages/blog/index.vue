@@ -33,7 +33,7 @@
                             <div class="p-4">
                                 <h3 class="text-4xl font-black">{{ article.title }}</h3>
                                 <p class="italic">
-                                    by : {{ article.author.name }}
+                                    by : {{ article.author }}
                                 </p>
                                 <p>{{ article.description }}</p>
                             </div>
