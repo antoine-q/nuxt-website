@@ -4,7 +4,7 @@ description: Learning how to use @nuxt/content to create a blog post
 img: v1.png
 alt: My first blog Post
 date: 2021-11-19T15:40:58.380Z
-author: map-name-antoine-queru-bio-french-web-developper-author-of-this-beautiful-website-author-img-img-antoine-png
+author: Antoine Queru
 ---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
