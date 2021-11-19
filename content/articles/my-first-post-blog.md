@@ -3,10 +3,8 @@ title: My first Blog Post
 description: Learning how to use @nuxt/content to create a blog post
 img: v2.png
 alt: My first blog Post
-author:
-    name: Benjamin
-    bio: All about Benjamin
-    image: https://images.unsplash.com/.....
+date: 2021-11-19T15:43:11.096Z
+author: map-name-antoine-queru-bio-french-web-developper-author-of-this-beautiful-website-author-img-img-antoine-png
 ---
 
 ## My first blog post
