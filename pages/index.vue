@@ -3,7 +3,7 @@
     <section class="bg-green-300">
         <div class="container mx-auto py-40">
             <h1 class="font-black text-white text-7xl">{{ homeData.title }}</h1>
-              {{ homeData.description }}
+              <div v-html="homeData.description"></div>
             
               <NuxtLink to="/contact" class=" transition inline-block mt-10 px-10 py-3 border border-white text-white text-xl hover:bg-white hover:text-green-300">{{homeData.button}}</NuxtLink>
             
@@ -15,9 +15,8 @@
 
         </div>
         <div class="w-1/2">
-          <h2 class="font-black text-6xl  text-right">{{ homeData.section-1-title }}</h2>
-          
-
+          <h2 class="font-black text-6xl  text-right">{{ homeData['section-1-title'] }}</h2>
+          <div v-html="homeData['section-1-content']"></div>
         </div>
       </div>
     </section>
