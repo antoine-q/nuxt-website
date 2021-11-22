@@ -32,3 +32,34 @@ collections:
     fields:
       - {label: 'Name', name: 'name', widget: 'string'}
       - {label: 'Bio', name: 'bio', widget: 'text'}
+  - name: 'technos'
+    label: 'Technos'
+    folder: 'content/technos'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {label: 'Name', name: 'name', widget: 'string'}
+      - {label: 'Logo', name: 'logo', widget: 'image'}
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'About Page'
+        name: 'about'
+        file: 'content/about.yml'
+        fields:
+          - {label: 'First title', name: 'first-title', widget: 'string'}
+          - {label: 'Fist body', name: 'first-body', widget: 'markdown'}
+          - {label: 'Second title', name: 'first-title', widget: 'string'}
+      - label: 'Home page'
+        name: 'home'
+        file: 'content/home.yml'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'text'}
+          - {label: 'Button text', name: 'button', widget: 'string'}
+          - {label: 'Section 1 title', name: 'section-1-title', widget: 'string'}
+          - {label: 'Section 1 content', name: 'section-1-content', widget: 'markdown'}
+          - {label: 'Section 2 title', name: 'section-2-title', widget: 'string'}

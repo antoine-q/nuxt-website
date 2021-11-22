@@ -1,7 +1,7 @@
 <template>
     <main>
         <section class="bg-green-300">
-            <div class="container mx-auto py-40">
+            <div class="container mx-auto py-40 text-center md:text-left">
                 <h1 class="font-black text-white text-7xl">Contact</h1>
             </div>
         </section>
