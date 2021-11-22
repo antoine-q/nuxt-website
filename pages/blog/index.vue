@@ -1,18 +1,18 @@
 <template>
     <main>
         <section class="bg-green-300">
-            <div class="container mx-auto py-40">
+            <div class="container mx-auto py-40 text-center md:text-left">
             <h1 class="font-black text-white text-7xl">Blog</h1>
             </div>
         </section>
         <section>
-            <div class="container mx-auto py-40">
-                <h2 class="font-black text-6xl mb-24">Lasts articles</h2>
+            <div class="container mx-auto py-10 md:py-40">
+                <h2 class="font-black text-6xl mb-24 text-center md:text-left ">Lasts articles</h2>
             <ul class="flex flex-row flex-wrap">
                 <li
                     v-for="article of articles"
                     :key="article.slug"
-                    class="box-border p-3 w-content w-1/3"
+                    class="box-border p-3 w-content md:w-1/3 w-full"
                 >
                     <div
                         class="

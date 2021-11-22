@@ -1,7 +1,7 @@
 <template>
 <main>
     <section class="bg-green-300">
-        <div class="container mx-auto py-40">
+        <div class="container mx-auto py-40 text-center md:text-left">
             <h1 class="font-black text-white text-7xl">{{article.title}}</h1>
             <p class="text-white mt-14 text-xl">{{article.description}}</p>
             <p class="text-white mt-14 text-xl"> Article last updated at : {{formatDate(article.updatedAt)}}</p>
