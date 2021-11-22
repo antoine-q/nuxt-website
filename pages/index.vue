@@ -35,13 +35,27 @@
     <section class="bg-blue-300">
       <div class="container mx-auto py-40">
         <div>
-          <h2 class="font-black text-white text-6xl">Technos I ❤</h2>
+          <h2 class="font-black text-white text-6xl">Some technos I ❤</h2>
         </div>
         <div class=" py-14 flex flex-row flex-wrap justify-center">
-          <div class="m-3 w-1/4 h-20 bg-white"></div>
-          <div class="m-3 w-1/4 h-20 bg-white"></div>
-          <div class="m-3 w-1/4 h-20 bg-white"></div>
-          <div class="m-3 w-1/4 h-20 bg-white"></div>
+          <div class="m-3 w-1/4 bg-white p-5 flex items-center">
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png" alt="Logo of NuxtJs" class="w-1/2 mx-auto">
+            
+          </div>
+          </div>
+          <div class="m-3 w-1/4 bg-white p-5 flex items-center">
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Logo of Laravel" class="w-1/2 mx-auto">
+            
+          </div>
+          </div>
+          <div class="m-3 w-1/4 bg-white p-5 flex items-center">
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png" alt="Logo of Java" class="w-1/2 mx-auto">
+            
+          </div>
+          </div>
         </div>
       </div>
     </section>
