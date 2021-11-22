@@ -8,7 +8,7 @@ export default {
         meta: [
             {charset : 'utf-8'},
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            {robots: 'nodindex nofollow'}
+            {name: 'robots', content: 'nodindex, nofollow'}
         ],
         link: [
             {rel: 'icon', type: 'image/png', sizes: '16x16', href:'favicon/favicon-16x16.png'},
