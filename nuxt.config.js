@@ -3,8 +3,6 @@ export default {
     target: 'static',
     buildModules: ['@nuxtjs/tailwindcss'],
     components: true,
-<<<<<<< HEAD
-=======
     head: {
         title: 'Antoine Queru - French Developper',
         meta: [
@@ -18,5 +16,4 @@ export default {
             {rel: 'icon', type: 'image/x-icon', href:'favicon/favicon.ico'}
         ]
     }
->>>>>>> main
 }
