@@ -1,7 +1,7 @@
 title: "Antoine Queru"
 description: |
   <p class="text-white mt-14 text-xl">
-    👋 Hi, my name is Tonka, i'm a french developper.
+    👋 Hi, my name is Antoine, i'm a french developper.
   </p>
   <p class="text-white mt-5 text-xl">
     I love making beautiful and unique websites with a nice UI.
@@ -9,5 +9,9 @@ description: |
 button: "Contact me !"
 section-1-title: "About me"
 section-1-content: |
-  <p>Hello world</p>
+  <p>Frech IT engineer, I make webisites for a web agency located in Troyes, France.</p>
+  <p>I love making unique fast and responsive websites !</p>
+  <p class="mt-5">I make all kinds of websites from a simple landing page to a complete fully operationnal web app !</p>
+section-1-img: img/antoine.png
 section-2-title: "Technos I ❤"
+section-2-btn: "And many more !"
