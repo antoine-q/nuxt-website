@@ -52,7 +52,7 @@ collections:
         fields:
           - {label: 'First title', name: 'first-title', widget: 'string'}
           - {label: 'Fist body', name: 'first-body', widget: 'markdown'}
-          - {label: 'Second title', name: 'first-title', widget: 'string'}
+          - {label: 'Second title', name: 'second-title', widget: 'string'}
       - label: 'Home page'
         name: 'home'
         file: 'content/home.yml'
