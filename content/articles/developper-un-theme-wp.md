@@ -1,7 +1,7 @@
 ---
-title: Themosis
-description: Learning how to use @nuxt/content to create a blog post
-img: v3.png
+title: Développer un thème Wordpress avec des super pouvoirs
+description: Développer des thèmes wordpress c'est souvent un peu ennuyeux... Aujourd'hui nous allons découvrir un framework wordpress remarquable basé sur Laravel.
+img: blog/themosis.png
 alt: My first blog Post
 date: 2021-11-19T15:51:26.054Z
 author: Antoine Queru

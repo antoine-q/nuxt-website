@@ -3,7 +3,7 @@
         <div class="group relative">
             <section class="bg-green-300">
                 <div class="container mx-auto py-40 text-center md:text-left">
-                <h1 class="font-black text-white text-7xl">About</h1>
+                <h1 class="font-black text-white text-7xl">À propos</h1>
                 </div>
             </section>
         <div class="custom-shape-divider-top-1642675248">
@@ -20,12 +20,26 @@
 
                 </div>
                 <div class="w-full md:w-1/2">
-                    <h2 class="font-black text-6xl text-center md:text-right">Work</h2>
+                    <h2 class="font-black text-6xl text-center md:text-right">Mes réalisations</h2>
                 </div>
                 
             </div>
+            <div class="container mx-auto flex flex-wrap items-center">
+
+                <div class="block h-96 w-1/3 p-3"><div class="bg-green-300 block w-full h-full"></div> </div>
+                <div class="block h-96 w-1/3 p-3">
+                    <div class="bg-green-300 block w-full h-full">
+                        <div class="flex items-center justify-center h-full">
+                            <div class="text-white text-2xl font-bold">
+                                À venir ...
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="block h-96 w-1/3 p-3"><div class="bg-green-300 block w-full h-full"></div> </div>
+            </div>
         </section>
-        <section>
+        <section id="technos">
             <div class="container mx-auto pt-40 flex flex-col md:flex-row">
                 <div class="w-full md:w-1/2">
                     <h2 class="font-black text-6xl text-center md:text-left">Technos</h2>
@@ -36,16 +50,17 @@
                 
             </div>
             <div class="container mx-auto py-10 flex flex-row flex-wrap justify-center">
-                <div
+                    <div
                 v-for="techno of technos"
                 :key="techno.slug"
-                class="m-3 w-full md:w-1/4 bg-white p-8 flex items-center"
                 >
-                <div>
+                <div class="block bg-white rounded-full p-10 m-2 transition duration-500 transform hover:scale-110 ease-in-out">
                     <img
                     :src="techno.img"
                     :alt="`Logo of ${techno.title}`"
-                    class="w-1/2 mx-auto"
+                    width="100"
+                    height="100"
+                    class="block"
                     />
                 </div>
                 </div>

@@ -16,7 +16,7 @@
         </div>
         <section>
             <div class="container mx-auto py-10 md:py-40 mt-20">
-                <h2 class="font-black text-6xl mb-24 text-center md:text-left ">Lasts articles</h2>
+                <h2 class="font-black text-6xl mb-24 text-center md:text-left ">Derniers articles</h2>
             <ul class="flex flex-row flex-wrap">
                 <li
                     v-for="article of articles"
@@ -41,10 +41,10 @@
                             />
                             <div class="p-4">
                                 <h3 class="text-4xl font-black">{{ article.title }}</h3>
-                                <p class="italic">
-                                    by : {{ article.author }}
+                                <p class="italic mt-2">
+                                    Publié le {{formatDate(article.createdAt)}}
                                 </p>
-                                <p>{{ article.description }}</p>
+                                <p class="my-2">{{ article.description }}</p>
                             </div>
                         </NuxtLink>
                     </div>
@@ -60,14 +60,20 @@
 export default {
     async asyncData({ $content, params }) {
         const articles = await $content("articles")
-            .only(["title", "description", "img", "slug", "author"])
-            .sortBy("createdAt", "asc")
+            .only(["title", "description", "img", "slug", "author", "createdAt"])
+            .sortBy("createdAt", "desc")
             .fetch();
 
         return {
             articles,
         };
     },
+    methods: {
+        formatDate(date){
+            const options = {year: 'numeric', month: 'long', day:'numeric'}
+            return new Date(date).toLocaleString('fr', options)
+        }
+    }
 };
 </script>
 

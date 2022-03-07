@@ -99,20 +99,21 @@
             <div
               v-for="techno of technos"
               :key="techno.slug"
-              class="m-3 w-full md:w-1/4 bg-white p-8 flex items-center"
             >
-              <div>
+              <div class="block bg-white rounded-full p-10 m-2 hover:shadow-xl transition duration-500 transform hover:scale-110 ease-in-out">
                 <img
                   :src="techno.img"
                   :alt="`Logo of ${techno.title}`"
-                  class="w-1/2 mx-auto"
+                  width="100"
+                  height="100"
+                  class="block"
                 />
               </div>
             </div>
           </div>
           <div class="text-center">
             <NuxtLink
-              to="/about"
+              to="/about#technos"
               class="
                 transition
                 inline-block

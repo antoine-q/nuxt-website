@@ -16,9 +16,9 @@
         </div>
         <section>
             <div class="container mx-auto  py-40">
-                <h2 class="font-black text-6xl mb-24 text-center">Contact me ! 📬</h2>
+                <h2 class="font-black text-6xl mb-24 text-center">Contactez moi ! 📬</h2>
                 <form method="POST" name="contact" data-netlify="true" data-netlify-recaptcha="true" class="flex flex-col max-w-3xl mx-auto">
-                    <label for="firstname" class="ml-3 text-xl font-bold">Name :</label>
+                    <label for="firstname" class="ml-3 text-xl font-bold">Nom :</label>
                     <input
                         type="text"
                         name="name"

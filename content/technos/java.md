@@ -1,5 +1,5 @@
 ---
-title: Laravel
-img: https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png
+title: Java
+img: https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg
 link: https://www.java.com/fr/
 ---

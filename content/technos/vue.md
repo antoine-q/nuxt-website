@@ -1,5 +1,8 @@
 ---
-title: "NuxtJS"
-img: "https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png"
-link: "https://nuxtjs.org/"
+title: "Vue.js"
+img: https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg
+link: 
 ---
+
+
+

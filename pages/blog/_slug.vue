@@ -2,10 +2,10 @@
 <main>
     <div class="group relative">
         <section class="bg-green-300">
-            <div class="container mx-auto py-16 text-center md:text-left">
-                <h1 class="font-black text-white text-7xl">{{article.title}}</h1>
-                <p class="text-white mt-14 text-xl">{{article.description}}</p>
-                <p class="text-white mt-14 text-xl"> Article last updated at : {{formatDate(article.updatedAt)}}</p>
+            <div class="container mx-auto py-16 text-center">
+                <h1 class="font-black text-white text-5xl">{{article.title}}</h1>
+                <p class="text-white mt-14 text-xl text-left max-w-3xl mx-auto">{{article.description}}</p>
+                <p class="text-white mt-14 text-xl"> Dernière mise à jour le : {{formatDate(article.updatedAt)}}</p>
             </div>
         </section>
         <div class="slug-wave">
@@ -43,31 +43,26 @@ export default {
     methods: {
         formatDate(date){
             const options = {year: 'numeric', month: 'long', day:'numeric'}
-            return new Date(date).toLocaleString('en', options)
+            return new Date(date).toLocaleString('fr', options)
         }
     }
 }
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
   .nuxt-content h2 {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 32px;
   }
   .nuxt-content h3 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
   }
   .nuxt-content p {
     margin-bottom: 20px;
+    font-family: 'Lora', serif;
   }
-  .icon.icon-link {
-  background-image: url('~assets/svg/icon-hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
-}
 
     .slug-wave {
     position: absolute;
