@@ -3,7 +3,7 @@
     <div class="group relative">
       <section class="bg-green-300 relative">
         <div class="container mx-auto py-24 text-center md:text-left">
-          <h1 class="font-black text-white text-7xl">{{ homeData.title }}</h1>
+          <h1 class="font-black text-white text-3xl md:text-7xl">{{ homeData.title }}</h1>
           <div v-html="homeData.description"></div>
           <NuxtLink
             to="/contact"
@@ -21,7 +21,7 @@
           >
         </div>
       </section>
-      <div class="wave">
+      <div class="hidden md:block wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +50,7 @@
         class="
           container
           mx-auto
+          px-4
           py-10
           md:py-40
           flex flex-col-reverse
@@ -64,7 +65,7 @@
           />
         </div>
         <div class="w-full md:w-1/2">
-          <h2 class="font-black text-6xl text-center md:text-right">
+          <h2 class="font-black text-3xl md:text-6xl text-center md:text-right">
             {{ homeData["section-1-title"] }}
           </h2>
           <div
@@ -75,7 +76,7 @@
       </div>
     </section>
     <div class="group relative">
-      <div class="wave-2">
+      <div class="hidden md:block wave-2">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +90,9 @@
         </svg>
       </div>
       <section class="bg-blue-300">
-        <div class="container mx-auto py-40">
+        <div class="container mx-auto py-10 md:py-40">
           <div>
-            <h2 class="font-black text-white text-center md:text-left text-6xl">
+            <h2 class="font-black text-white text-center md:text-left text-3xl md:text-6xl">
               {{ homeData["section-2-title"] }}
             </h2>
           </div>

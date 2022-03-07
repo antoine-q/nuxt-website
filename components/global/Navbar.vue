@@ -1,5 +1,5 @@
 <template>
-    <nav class="filter mt-0 md:mt-7 mb-4 fixed md:static w-full bg-white drop-shadow-sm md:drop-shadow-none">
+    <nav class="filter mt-0 md:my-5 static w-full bg-white drop-shadow-sm md:drop-shadow-none">
         <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-end">
             <ul class="desktop-nav hidden md:flex flex-wrap flex-row justify-end">
                 <NuxtLink to="/" class="p-3 font-bold text-xl">Antoine</NuxtLink>
@@ -31,14 +31,14 @@
             </div>
             
         </div>
-        <div class="hidden mobile-menu transition ease-in-out duration-150 w-full">
+        <div class="hidden mobile-menu transition-all ease-in-out duration-150 w-full">
                 <ul class="flex flex-wrap    flex-col justify-center text-center">
                 <NuxtLink to="/" class="p-3 font-bold text-xl">Antoine</NuxtLink>
                 <NuxtLink to="/blog" class="p-3 font-bold text-xl"
                     >Blog</NuxtLink
                 >
                 <NuxtLink to="/about" class="p-3 font-bold text-xl"
-                    >About</NuxtLink
+                    >À propos</NuxtLink
                 >
                 <NuxtLink to="/contact" class="p-3 font-bold text-xl"
                     >Contact</NuxtLink
