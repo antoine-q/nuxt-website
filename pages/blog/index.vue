@@ -76,7 +76,7 @@ export default {
     }
 };
 </script>
-
+ 
 <style>
     .custom-shape-divider-top-1642674699 {
     position: absolute;
