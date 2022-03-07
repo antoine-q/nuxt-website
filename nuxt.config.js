@@ -1,7 +1,7 @@
 export default {
     modules: ['@nuxt/content'],
     target: 'static',
-    buildModules: ['@nuxtjs/tailwindcss', "@nuxtjs/svg"],
+    buildModules: ['@nuxtjs/tailwindcss'],
     components: true,
     head: {
         title: 'Antoine Queru - French Developper',
