@@ -4,11 +4,17 @@ export default {
     buildModules: ['@nuxtjs/tailwindcss'],
     components: true,
     head: {
-        title: 'Antoine Queru - French Developper',
+        title: 'Antoine Queru -  Développeur web fullstack à Troyes en Champagne, France',
         meta: [
             {charset : 'utf-8'},
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            {name: 'robots', content: 'nodindex, nofollow'}
+            {name: 'robots', content: 'nodindex, nofollow'},
+            {name: 'language', content: 'French'},
+            {name:'description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
+            {name:'twitter:description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
+            {property:'og:description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
+            {property:'og:title', content: 'Antoine Queru -  Développeur web fullstack à Troyes en Champagne, France'},
+            {name:'twitter:title', content: 'Antoine Queru -  Développeur web fullstack à Troyes en Champange, France'},
         ],
         link: [
             {rel: 'icon', type: 'image/png', sizes: '16x16', href:'favicon/favicon-16x16.png'},
