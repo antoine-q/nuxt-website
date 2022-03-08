@@ -41,8 +41,10 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: 'Name', name: 'name', widget: 'string'}
-      - {label: 'Logo', name: 'logo', widget: 'image'}
+      - {label: 'Name', name: 'title', widget: 'string'}
+      - {label: 'Logo', name: 'img', widget: 'image'}
+      - {label: 'Lien', name: 'link', widget: 'image'}
+      - {label: 'Lien', name: 'home', widget: 'boolean'}
   - name: 'pages'
     label: 'Pages'
     files:

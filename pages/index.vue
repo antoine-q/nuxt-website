@@ -105,6 +105,7 @@
                 <img
                   :src="techno.img"
                   :alt="`Logo of ${techno.title}`"
+                  :title="techno.title"
                   width="100"
                   height="100"
                   class="block"
@@ -145,7 +146,9 @@ export default {
   },
   async asyncData({ $content, params }) {
     const homeData = await $content("home").fetch();
-    const technos = await $content("technos").only(["title", "img"]).fetch();
+    const technos = await $content("technos").only(["title", "img"])
+    .where({home: {$eq: true}})
+    .fetch();
 
     return {
       homeData,

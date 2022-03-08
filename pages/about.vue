@@ -58,6 +58,7 @@
                     <img
                     :src="techno.img"
                     :alt="`Logo of ${techno.title}`"
+                    :title="techno.title"
                     width="100"
                     height="100"
                     class="block"
