@@ -2,9 +2,9 @@
   <main>
     <div class="group relative">
       <section class="bg-green-300 relative">
-        <div class="container mx-auto py-24 text-center md:text-left">
+        <div class="container mx-auto py-20 text-center md:text-left">
           <h1 class="font-black text-white text-3xl md:text-7xl">{{ homeData.title }}</h1>
-          <div v-html="homeData.description"></div>
+          <div class="max-w-xl" v-html="homeData.description"></div>
           <NuxtLink
             to="/contact"
             class="
@@ -60,7 +60,7 @@
         <div class="w-full md:w-1/2">
           <img
             :src="homeData['section-1-img']"
-            class="w-full md:w-3/4"
+            class="w-full md:w-96"
             alt="Antoine Queru French It Engineer"
           />
         </div>
@@ -75,6 +75,52 @@
         </div>
       </div>
     </section>
+    <section id="blog">
+            <div class="container mx-auto mt-5 md:pt-10 flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <h2 class="font-black text-3xl md:text-6xl text-center md:text-left">Derniers articles</h2>
+                </div>
+                <div class="w-full md:w-1/2">
+
+                </div>
+                
+            </div>
+            <div class="container mx-auto md:mb-40  py-10 flex flex-row flex-wrap justify-center">
+                <ul class="flex flex-row flex-wrap">
+                <li
+                    v-for="article of articles"
+                    :key="article.slug"
+                    class="box-border p-3 w-content md:w-1/2 w-full"
+                >
+                    <div
+                        class="
+                            hover:border-gray-500
+                            bg-white
+                        "
+                    >
+                        <NuxtLink
+                            :to="{
+                                name: 'blog-slug',
+                                params: { slug: article.slug },
+                            }"
+                        >
+                            <img
+                                :src="article.img"
+                                class="w-full"
+                            />
+                            <div class="p-4">
+                                <h3 class="text-4xl font-black">{{ article.title }}</h3>
+                                <p class="italic mt-2">
+                                    Publié le {{formatDate(article.createdAt)}}
+                                </p>
+                                <p class="my-2">{{ article.description }}</p>
+                            </div>
+                        </NuxtLink>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
     <div class="group relative">
       <div class="hidden md:block wave-2">
         <svg
@@ -90,7 +136,7 @@
         </svg>
       </div>
       <section class="bg-blue-300">
-        <div class="container mx-auto py-10 md:py-40">
+        <div class="container mx-auto py-10 md:py-20">
           <div>
             <h2 class="font-black text-white text-center md:text-left text-3xl md:text-6xl">
               {{ homeData["section-2-title"] }}
@@ -106,8 +152,8 @@
                   :src="techno.img"
                   :alt="`Logo of ${techno.title}`"
                   :title="techno.title"
-                  width="100"
-                  height="100"
+                  width="70"
+                  height="70"
                   class="block"
                 />
               </div>
@@ -150,11 +196,24 @@ export default {
     .where({home: {$eq: true}})
     .fetch();
 
+    const articles = await $content("articles")
+    .limit(2)
+    .only(["title", "description", "img", "slug", "author", "createdAt"])
+    .sortBy("createdAt", "desc")
+    .fetch();
+
     return {
       homeData,
       technos,
+      articles,
     };
   },
+  methods: {
+        formatDate(date){
+            const options = {year: 'numeric', month: 'long', day:'numeric'}
+            return new Date(date).toLocaleString('fr', options)
+        }
+  }
 };
 </script>
 

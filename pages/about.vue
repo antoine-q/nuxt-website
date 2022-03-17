@@ -2,7 +2,7 @@
     <main>
         <div class="group relative">
             <section class="bg-green-300">
-                <div class="container mx-auto py-16 md:py-40 text-center md:text-left">
+                <div class="container mx-auto py-16 md:py-20 text-center md:text-left">
                 <h1 class="font-black text-white text-3xl md:text-7xl">À propos</h1>
                 </div>
             </section>
