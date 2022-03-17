@@ -111,7 +111,7 @@
                             <div class="p-4">
                                 <h3 class="text-4xl font-black">{{ article.title }}</h3>
                                 <p class="italic mt-2">
-                                    Publié le {{formatDate(article.createdAt)}}
+                                    Publié le {{formatDate(article.date)}}
                                 </p>
                                 <p class="my-2">{{ article.description }}</p>
                             </div>
@@ -198,8 +198,8 @@ export default {
 
     const articles = await $content("articles")
     .limit(2)
-    .only(["title", "description", "img", "slug", "author", "createdAt"])
-    .sortBy("createdAt", "desc")
+    .only(["title", "description", "img", "slug", "author", "date"])
+    .sortBy("date", "desc")
     .fetch();
 
     return {
