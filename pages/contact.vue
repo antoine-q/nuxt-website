@@ -3,7 +3,7 @@
         <div class="group relative">
             <section class="bg-green-300">
                 <div class="container mx-auto py-16 md:py-20 text-center md:text-left">
-                    <h1 class="font-black text-white text-3xl md:text-7xl">Contact</h1>
+                    <h1 class="font-black text-white text-4xl md:text-5xl">Contact</h1>
                 </div>
             </section>
 <div class="hidden md:block custom-shape-divider-top-1642675201">
@@ -16,47 +16,54 @@
         </div>
         <section>
             <div class="container mx-auto py-16  md:py-40">
-                <h2 class="font-black text-3xl md:text-6xl mb-24 text-center">Contactez moi ! 📬</h2>
-                <form method="POST" name="contact" data-netlify="true" data-netlify-recaptcha="true" class="flex flex-col max-w-3xl mx-auto">
-                    <label for="firstname" class="ml-3 text-xl font-bold">Nom :</label>
+                <h2 class="font-black text-3xl md:text-4xl mb-10 text-center">Contactez moi ! 📬</h2>
+                <form method="POST" name="contact" data-netlify="true" data-netlify-recaptcha="true" class="flex flex-col max-w-2xl mx-auto">
+                    <label for="firstname" class="mt-3 ml-3 text-xl font-bold">Nom :</label>
                     <input
                         type="text"
                         name="name"
                         id="firstname"
-                        class="p-3 m-2 border-2 border-black"
+                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300  rounded-md"
                     />
-                    <label for="email" class="ml-3 text-xl font-bold"
+                    <label for="email" class="mt-3 ml-3 text-xl font-bold"
                         >Email :</label
                     >
                     <input
                         type="email"
                         name="email"
                         id="email"
-                        class="p-3 m-2 border-2 border-black"
+                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300  rounded-md"
                     />
-                    <label for="message" class="ml-3 text-xl font-bold"
+                    <label for="message" class="mt-3 ml-3 text-xl font-bold"
                         >Message :</label
                     >
                     <textarea
                         name="message"
                         id="message"
-                        class="p-3 m-2 border-2 border-black"
+                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300  rounded-md"
                         rows="10"
                     ></textarea>
                     <div data-netlify-recaptcha="true"></div>
                     <input
                         type="submit"
-                        value="Send !"
+                        value="Envoyer "
                         class="
-                            p-3
-                            m-2
-                            border-2 border-blue-600
-                        
-                            bg-blue-600
-                            text-white
-                            hover:bg-blue-700
-                            hover:border-blue-700
+                            transition
                             cursor-pointer
+                            duration-300
+                            ease-in-out
+                            inline-block
+                            mt-5
+                            m-2
+                            px-8
+                            py-2
+                            rounded-lg            
+                            text-lg
+                            font-bold
+                            bg-green-500
+                            text-white
+                            hover:bg-green-600
+                            active:bg-grey-100
                         "
                     />
                 </form>
