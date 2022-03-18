@@ -1,8 +1,16 @@
 export default {
     modules: ['@nuxt/content'],
     target: 'static',
-    buildModules: ['@nuxtjs/tailwindcss'],
+    buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
     components: true,
+    googleFonts: {
+        display: "swap",
+        families: {
+            Lato: {
+            wght: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+            }
+        }
+    },
     head: {
         title: 'Antoine Queru -  Développeur web fullstack à Troyes en Champagne, France',
         meta: [
