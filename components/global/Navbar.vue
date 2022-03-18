@@ -1,15 +1,15 @@
 <template>
-    <nav class="filter mt-0 md:my-5 static w-full bg-white drop-shadow-sm md:drop-shadow-none">
-        <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-end">
+    <nav class="filter mt-0 md:my-2 static w-full bg-white drop-shadow-sm md:drop-shadow-none">
+        <div class="container mx-auto flex flex-wrap flex-col max-w-6xl md:flex-row justify-end">
             <ul class="desktop-nav hidden md:flex flex-wrap flex-row justify-end">
-                <NuxtLink to="/" class="p-3 font-bold text-xl">Antoine</NuxtLink>
-                <NuxtLink to="/blog" class="p-3 font-bold text-xl"
+                <NuxtLink to="/" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
+                <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >Blog</NuxtLink
                 >
-                <NuxtLink to="/about" class="p-3 font-bold text-xl"
+                <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >À propos</NuxtLink
                 >
-                <NuxtLink to="/contact" class="p-3 font-bold text-xl"
+                <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >Contact</NuxtLink
                 >
             </ul>
@@ -33,14 +33,14 @@
         </div>
         <div class="hidden mobile-menu transition-all ease-in-out duration-150 w-full">
                 <ul class="flex flex-wrap    flex-col justify-center text-center">
-                <NuxtLink to="/" class="p-3 font-bold text-xl">Antoine</NuxtLink>
-                <NuxtLink to="/blog" class="p-3 font-bold text-xl"
+                <NuxtLink to="/" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
+                <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >Blog</NuxtLink
                 >
-                <NuxtLink to="/about" class="p-3 font-bold text-xl"
+                <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >À propos</NuxtLink
                 >
-                <NuxtLink to="/contact" class="p-3 font-bold text-xl"
+                <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >Contact</NuxtLink
                 >
             </ul>
@@ -49,17 +49,8 @@
 </template>
 
 <style scoped>
-.desktop-nav a.nuxt-link-exact-active::after,
-.desktop-nav a:hover::after {
-    opacity: 1;
-}
-.desktop-nav a::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    display: block;
-    opacity: 0;
+.desktop-nav a.nuxt-link-exact-active{
+    color: #10b981;
 }
 </style>
 
