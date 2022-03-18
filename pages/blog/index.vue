@@ -21,7 +21,7 @@
                 <li
                     v-for="article of articles"
                     :key="article.slug"
-                    class="box-border p-3 w-content md:w-1/3 w-full"
+                    class="box-border p-3 w-content w-full md:w-1/2 lg:w-1/3 "
                 >
                     <div
                         class="

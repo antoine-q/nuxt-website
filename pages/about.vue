@@ -49,7 +49,7 @@
                 </div>
                 
             </div>
-            <div class="container mx-auto py-10 flex flex-row flex-wrap justify-center">
+            <div class="container mx-auto md:mb-40 py-10 flex flex-row flex-wrap justify-center">
                     <div
                 v-for="techno of technos"
                 :key="techno.slug"

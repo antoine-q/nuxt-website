@@ -123,20 +123,12 @@
         </section>
     <div class="group relative">
       <div class="hidden md:block wave-2">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <section class="bg-blue-300">
-        <div class="container mx-auto py-10 md:py-20">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+      <section class="bg-green-400">
+        <div class="container mx-auto py-10 md:pt-20 md:pb-52">
           <div>
             <h2 class="font-black text-white text-center md:text-left text-3xl md:text-6xl">
               {{ homeData["section-2-title"] }}
@@ -170,7 +162,7 @@
                 py-3
                 border border-white
                 text-white text-xl
-                hover:bg-white hover:text-blue-300
+                hover:bg-white hover:text-green-400
               "
               >{{ homeData["section-2-btn"] }}</NuxtLink
             >
@@ -217,7 +209,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   box-sizing: border-box;
 }
@@ -248,18 +240,18 @@ export default {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
 .wave-2 svg {
     position: relative;
     display: block;
-    width: calc(232% + 1.3px);
-    height: 245px;
+    width: calc(237% + 1.3px);
+    height: 59px;
 }
 
 .wave-2 .shape-fill {
-    fill: #93C5FD;
+    fill: #34D399;
 }
+
 
 </style>
