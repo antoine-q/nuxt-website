@@ -4,7 +4,7 @@ description: Lors de la création d'un nouveau projet, la mise en place de son
   dépot git est une étape indispensable, voyons comment faire cela rapidement.
 img: blog/git.png
 alt: Mettre en place son dépot git
-date: 2022-03-17T15:59:35.933Z
+date: 2022-02-15T15:59:35.933Z
 author: Antoine Queru
 ---
 

@@ -3,7 +3,7 @@ title: Qu’est ce que le Web 3.0
 description: Si vous êtes attentifs aux dernières informations qui circulent sur le web, vous avez sûrement entendu parler du Web 3.0. Cependant ce terme est souvent assez flou et il est difficile de comprendre les enjeux et technologies qui se cachent derrière ce terme. 
 img: blog/web-3.png
 alt: My first blog Post
-date: 2021-11-19T15:40:58.380Z
+date: 2022-30-05T15:40:58.380Z
 author: Antoine Queru
 ---
 

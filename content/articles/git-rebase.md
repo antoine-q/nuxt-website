@@ -3,7 +3,7 @@ title: Nettoyez votre historique de commit avec Git rebase
 description: Comment garder un historique git propre et compréhensible quand on travail en équipe sur le même dépot git ? Le rebasage est une solution que nous allons découvrir dans cet article
 img: blog/git.png
 alt: My first blog Post
-date: 2021-11-19T15:40:58.380Z
+date: 2022-03-17T15:40:58.380Z
 author: Antoine Queru
 ---
 
