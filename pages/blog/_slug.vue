@@ -2,10 +2,10 @@
 <main>
     <div class="group relative">
         <section class="bg-green-300">
-            <div class="container mx-auto py-16 text-center">
-                <h1 class="font-black text-white text-5xl">{{article.title}}</h1>
-                <p class="text-white mt-14 text-xl text-left max-w-3xl mx-auto">{{article.description}}</p>
-                <p class="text-white mt-14 text-xl"> Dernière mise à jour le : {{formatDate(article.updatedAt)}}</p>
+            <div class="container mx-auto py-20 text-center">
+                <h1 class="font-black text-white text-4xl md:text-5xl">{{article.title}}</h1>
+                <p class="text-white mt-14 text-lg text-left max-w-3xl mx-auto">{{article.description}}</p>
+                <p class="text-white mt-14 text-md italic"> Dernière mise à jour le : {{formatDate(article.updatedAt)}}</p>
             </div>
         </section>
         <div class="hidden lg:block slug-wave">

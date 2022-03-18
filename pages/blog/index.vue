@@ -2,8 +2,8 @@
     <main>
         <div class="group relative">
             <section class="bg-green-300">
-                <div class="container mx-auto py-16 md:py-20 text-center md:text-left">
-                <h1 class="font-black text-white text-3xl md:text-7xl">Blog</h1>
+                <div class="container mx-auto max-w-6xl px-4 xl:px-0 py-16 md:py-20 text-center md:text-left">
+                <h1 class="font-black text-white text-4xl md:text-5xl">Blog</h1>
                 </div>
             </section>
         <div class="hidden md:block custom-shape-divider-top-1642674699">
@@ -15,8 +15,8 @@
 </div>
         </div>
         <section>
-            <div class="container mx-auto px-4 py-10 md:py-40 mt-20">
-                <h2 class="font-black text-3xl md:text-6xl mb-10 md:mb-24 text-left ">Derniers articles</h2>
+            <div class="container mx-auto max-w-6xl px-4 xl:px-0 px-4 py-10 md:py-40 mt-20">
+                <h2 class="font-black text-3xl md:text-4xl mb-10 md:mb-20 text-left ">Derniers articles</h2>
             <ul class="flex flex-row flex-wrap">
                 <li
                     v-for="article of articles"
@@ -39,14 +39,28 @@
                                 :src="article.img"
                                 class="w-full"
                             />
-                            <div class="p-4">
-                                <h3 class="text-4xl font-black">{{ article.title }}</h3>
-                                <p class="italic mt-2">
+                        </NuxtLink>
+                            <div class="py-4">
+                            <NuxtLink
+                            :to="{
+                                name: 'blog-slug',
+                                params: { slug: article.slug },
+                            }"
+                            class="
+                            hover:text-green-500
+                            transition
+                            duration-300
+                            ease-in-out
+                            "
+                            >
+                                <h3 class="text-2xl font-black">{{ article.title }}</h3>
+                            </NuxtLink>
+                                <p class="italic mt-2 text-gray-800 text-sm">
                                     Publié le {{formatDate(article.date)}}
                                 </p>
-                                <p class="my-2">{{ article.description }}</p>
+                                <p class="my-2 text-gray-700 text-sm">{{ article.description }}</p>
                             </div>
-                        </NuxtLink>
+                        
                     </div>
                 </li>
             </ul>

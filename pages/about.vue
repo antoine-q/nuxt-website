@@ -2,8 +2,8 @@
     <main>
         <div class="group relative">
             <section class="bg-green-300">
-                <div class="container mx-auto py-16 md:py-20 text-center md:text-left">
-                <h1 class="font-black text-white text-3xl md:text-7xl">À propos</h1>
+                <div class="container mx-auto max-w-6xl px-4 xl:px-0 py-16 md:py-20 text-center md:text-left">
+                <h1 class="font-black text-white text-4xl md:text-5xl">À propos</h1>
                 </div>
             </section>
         <div class="hidden md:block custom-shape-divider-top-1642675248">
@@ -15,17 +15,16 @@
 </div>
         </div>
         <section>
-            <div class="container mx-auto py-16 md:py-40 flex flex-col-reverse md:flex-row">
+            <div class="container mx-auto max-w-6xl pt-16 md:pt-40 pb-16 px-4 xl:px-0 flex flex-col-reverse md:flex-row">
                 <div class="w-full md:w-1/2">
 
                 </div>
                 <div class="px-5 md:px-0 w-full md:w-1/2">
-                    <h2 class="font-black text-3xl md:text-6xl text-left md:text-right">Mes réalisations</h2>
+                    <h2 class="font-black text-3xl md:text-4xl text-left md:text-right">Mes réalisations</h2>
                 </div>
                 
             </div>
-            <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-
+            <div class="container max-w-6xl mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <div class="block h-96 w-full md:w-1/3 p-3"><div class="bg-green-300 block w-full h-full"></div> </div>
                 <div class="block h-96 w-full md:w-1/3 p-3">
                     <div class="bg-green-300 block w-full h-full">
@@ -40,16 +39,16 @@
             </div>
         </section>
         <section id="technos">
-            <div class="container mx-auto pt-10 md:pt-40 flex flex-col md:flex-row">
+            <div class="container max-w-6xl mx-auto pt-10 md:pt-20 px-4 xl:px-0 flex flex-col md:flex-row">
                 <div class="w-full md:w-1/2">
-                    <h2 class="font-black text-3xl md:text-6xl text-center md:text-left">Technos</h2>
+                    <h2 class="font-black text-3xl md:text-4xl text-center md:text-left">Technos</h2>
                 </div>
                 <div class="w-full md:w-1/2">
 
                 </div>
                 
             </div>
-            <div class="container mx-auto md:mb-40 py-10 flex flex-row flex-wrap justify-center">
+            <div class="container mx-auto max-w-6xl md:mb-40 py-10 flex flex-row flex-wrap justify-center">
                     <div
                 v-for="techno of technos"
                 :key="techno.slug"
