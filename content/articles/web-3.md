@@ -8,6 +8,7 @@ img: blog/web-3.png
 alt: My first blog Post
 date: 2022-01-31T23:00:00.000Z
 author: Antoine Queru
+authorslug: antoine-queru
 ---
 
 ## Retour en arrière, le Web 1.0 et le Web 2.0

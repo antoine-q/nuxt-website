@@ -5,6 +5,7 @@ img: blog/themosis.png
 alt: My first blog Post
 date: 2021-11-19T15:51:26.054Z
 author: Antoine Queru
+authorslug: antoine-queru
 ---
 
 ## Themosis, un framework Wordpress fabuleux

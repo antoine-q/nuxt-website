@@ -5,6 +5,7 @@ img: blog/git.png
 alt: My first blog Post
 date: 2022-03-17T15:40:58.380Z
 author: Antoine Queru
+authorslug: antoine-queru
 ---
 
 

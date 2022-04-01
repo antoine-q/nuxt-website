@@ -6,6 +6,7 @@ img: blog/git.png
 alt: Mettre en place son dépot git
 date: 2022-02-15T15:59:35.933Z
 author: Antoine Queru
+authorslug: antoine-queru
 ---
 
 ## Installation de l'environnement
