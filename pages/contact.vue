@@ -72,6 +72,48 @@
     </main>
 </template>
 
+<script>
+export default {
+    data(){
+        return {
+            title: "Contactez moi, développeur Web a Troyes - Antoine Queru"
+        }
+    },
+    head() {
+        return {
+            title: this.title,
+            meta: [
+                {
+                    hid: 'contact-description',
+                    name: 'description',
+                    content: 'Contactez moi pour avoir plus d\'informations sur mon activité. Antoine Queru, développement de sites internet et d\'applicationw web'
+                },
+                {
+                hid: 'contact-tw-title',
+                name:'twitter:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-tw-description',
+                name: 'twitter:description',
+                content: 'Contactez moi pour avoir plus d\'informations sur mon activité. Antoine Queru, développement de sites internet et d\'applicationw web',
+                },
+                {
+                hid: 'contact-og-title',
+                property : 'og:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-og-description',
+                property : 'og:description',
+                content: 'Contactez moi pour avoir plus d\'informations sur mon activité. Antoine Queru, développement de sites internet et d\'applicationw web',
+                },
+            ]
+        }
+    }
+}
+</script>
+
 <style>
 .custom-shape-divider-top-1642675201 {
     position: absolute;

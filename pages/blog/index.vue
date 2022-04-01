@@ -87,6 +87,43 @@ export default {
             const options = {year: 'numeric', month: 'long', day:'numeric'}
             return new Date(date).toLocaleString('fr', options)
         }
+    },
+        data(){
+        return {
+            title: "Blog, astuces de dev et actualités de la tech  - Antoine Queru"
+        }
+    },
+    head() {
+        return {
+            title: this.title,
+            meta: [
+                {
+                    hid: 'contact-description',
+                    name: 'description',
+                    content: 'Venez parcourir mes différents articles sur la tech et le développement web sur mon blog.'
+                },
+                {
+                hid: 'contact-tw-title',
+                name:'twitter:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-tw-description',
+                name: 'twitter:description',
+                content: 'Venez parcourir mes différents articles sur la tech et le développement web sur mon blog.',
+                },
+                {
+                hid: 'contact-og-title',
+                property : 'og:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-og-description',
+                property : 'og:description',
+                content: 'Venez parcourir mes différents articles sur la tech et le développement web sur mon blog.',
+                },
+            ]
+        }
     }
 };
 </script>

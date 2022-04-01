@@ -208,6 +208,34 @@
 export default {
   head() {
     return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'home-description',
+          name: 'description',
+          content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web',
+        },
+        {
+          hid: 'home-tw-title',
+          name:'twitter:title',
+          content: this.title,
+        },
+        {
+          hid: 'home-tw-description',
+          name: 'twitter:description',
+          content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web',
+        },
+        {
+          hid: 'home-og-title',
+          property : 'og:title',
+          content: this.title,
+        },
+        {
+          hid: 'home-og-description',
+          property : 'og:description',
+          content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web',
+        },
+      ],
       script: [
         { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
       ],
@@ -236,6 +264,11 @@ export default {
             const options = {year: 'numeric', month: 'long', day:'numeric'}
             return new Date(date).toLocaleString('fr', options)
         }
+  },
+  data() {
+    return {
+      title: 'Développeur web fullstack à Troyes en Champagne, France - Antoine Queru'
+    }
   }
 };
 </script>

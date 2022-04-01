@@ -77,7 +77,44 @@ export default {
     return {
         technos,
     };
-},
+    },
+    data(){
+        return {
+            title: "Mes différents projets et mes technos favorites, Nuxt, Laravel, Vue - Antoine Queru"
+        }
+    },
+    head() {
+        return {
+            title: this.title,
+            meta: [
+                {
+                    hid: 'contact-description',
+                    name: 'description',
+                    content: 'Découvrez les technos que j\'utilise et que j\'apprécie au cours de mes différents projets, sites internet applications web. Développement Laravel Vue Nuxt Javascript PHP.'
+                },
+                {
+                hid: 'contact-tw-title',
+                name:'twitter:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-tw-description',
+                name: 'twitter:description',
+                content: 'Découvrez les technos que j\'utilise et que j\'apprécie au cours de mes différents projets, sites internet applications web. Développement Laravel Vue Nuxt Javascript PHP.',
+                },
+                {
+                hid: 'contact-og-title',
+                property : 'og:title',
+                content: this.title,
+                },
+                {
+                hid: 'contact-og-description',
+                property : 'og:description',
+                content: 'Découvrez les technos que j\'utilise et que j\'apprécie au cours de mes différents projets, sites internet applications web. Développement Laravel Vue Nuxt Javascript PHP.',
+                },
+            ]
+        }
+    }
 }
 </script>
 

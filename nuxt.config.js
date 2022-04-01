@@ -18,7 +18,6 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             {name: 'robots', content: 'nodindex, nofollow'},
             {name: 'language', content: 'French'},
-            {name:'description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
             {name:'twitter:description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
             {property:'og:description', content: 'Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web'},
             {property:'og:title', content: 'Antoine Queru -  Développeur web fullstack à Troyes en Champagne, France'},
