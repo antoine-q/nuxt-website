@@ -16,26 +16,13 @@
         </div>
         <section>
             <div class="container mx-auto max-w-6xl pt-16 md:pt-40 pb-16 px-4 xl:px-0 flex flex-col-reverse md:flex-row">
-                <div class="w-full md:w-1/2">
-
-                </div>
-                <div class="px-5 md:px-0 w-full md:w-1/2">
-                    <h2 class="font-black text-3xl md:text-4xl text-left md:text-right">Mes réalisations</h2>
+                <div class="px-5 md:px-0 w-full">
+                    <h2 class="font-black text-3xl md:text-4xl">Mes réalisations</h2>
                 </div>
                 
             </div>
-            <div class="container max-w-6xl mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                <div class="block h-96 w-full md:w-1/3 p-3"><div class="bg-green-300 block w-full h-full"></div> </div>
-                <div class="block h-96 w-full md:w-1/3 p-3">
-                    <div class="bg-green-300 block w-full h-full">
-                        <div class="flex items-center justify-center h-full">
-                            <div class="text-white text-2xl font-bold">
-                                À venir ...
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="block h-96 w-full md:w-1/3 p-3"><div class="bg-green-300 block w-full h-full"></div> </div>
+            <div class="container max-w-6xl mx-auto flex flex-wrap md:flex-row flex-col items-center">
+                <Realisation v-for="realisation in realisations" :key="realisation.title" :title="realisation.title" :description="realisation.description" :link="realisation.link" :img="realisation.img"/>
             </div>
         </section>
         <section id="technos">
@@ -73,9 +60,11 @@
 export default {
     async asyncData({ $content, params }) {
     const technos = await $content("technos").only(["title", "img"]).fetch();
+    const realisations = await $content("realisations").fetch();
 
     return {
         technos,
+        realisations
     };
     },
     data(){
