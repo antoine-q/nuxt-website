@@ -1,24 +1,10 @@
 <template>
     <main>
       <SeoHead :title="homeData.seo.title" :description="homeData.seo.description" :image="homeData.seo.image"/>
-        <div class="group relative">
-            <section class="bg-green-300 relative">
-                <div
-                    class="container mx-auto max-w-6xl py-20 px-4 xl:px-0 text-center md:text-left"
-                >
-                    <h1 class="font-black text-white text-4xl md:text-5xl">
-                        {{ homeData.title }}
-                    </h1>
-                    <div class="max-w-xl" v-html="homeData.description"></div>
-                    <NuxtLink
-                        to="/contact"
-                        class="transition duration-300 ease-in-out inline-block mt-5 px-8 py-2 rounded-full text-lg font-bold bg-green-400 text-white hover:text-green-400 hover:bg-white active:bg-grey-100"
-                        >{{ homeData.button }}</NuxtLink
-                    >
-                </div>
-            </section>
-            <WaveHomeTop/>
-        </div>
+        <Header :title="homeData.title" wave="wave-home-top">
+            <div class="mx-auto max-w-xl pt-5" v-html="homeData.description"></div>
+            <ButtonPrimary :internal="true" link="/contact" :title="homeData.button"/> 
+        </Header>
         <section>
             <div
                 class="container mx-auto max-w-6xl px-4 xl:px-0 py-10 md:py-20 flex flex-col-reverse md:flex-row md:items-center"
