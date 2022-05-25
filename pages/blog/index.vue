@@ -1,18 +1,8 @@
 <template>
     <main>
         <SeoHead :title="blogData.seo.title" :description="blogData.seo.description" :image="blogData.seo.image"/>
-        <div class="group relative">
-            <section class="bg-green-300">
-                <div
-                    class="container mx-auto max-w-6xl px-4 xl:px-0 py-16 md:py-20 text-center md:text-left"
-                >
-                    <h1 class="font-black text-white text-4xl md:text-5xl">
-                        Blog
-                    </h1>
-                </div>
-            </section>
-            <WaveBlog/>
-        </div>
+        <Header title="Blog" wave="wave-blog">
+        </Header>
         <section>
             <div
                 class="container mx-auto max-w-6xl px-4 xl:px-0 px-4 py-10 md:py-40 mt-20"

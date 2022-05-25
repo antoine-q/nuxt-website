@@ -1,18 +1,8 @@
 <template>
     <main>
         <SeoHead :title="aboutData.seo.title" :description="aboutData.seo.description" :image="aboutData.seo.image"/>
-        <div class="group relative">
-            <section class="bg-green-300">
-                <div
-                    class="container mx-auto max-w-6xl px-4 xl:px-0 py-16 md:py-20 text-center md:text-left"
-                >
-                    <h1 class="font-black text-white text-4xl md:text-5xl">
-                        À propos
-                    </h1>
-                </div>
-            </section>
-            <WaveAbout/>
-        </div>
+        <Header title="À propos" wave="wave-about">
+        </Header>
         <section>
             <div
                 class="container mx-auto max-w-6xl pt-16 md:pt-40 pb-16 px-4 xl:px-0 flex flex-col-reverse md:flex-row"

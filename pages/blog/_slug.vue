@@ -1,24 +1,17 @@
 <template>
     <main>
-        <div class="group relative">
-            <section class="bg-green-300">
-                <div class="container mx-auto py-20 text-center">
-                    <h1 class="font-black text-white text-4xl md:text-5xl">
-                        {{ article.title }}
-                    </h1>
-                    <p
-                        class="text-white mt-14 text-lg text-left max-w-3xl mx-auto"
-                    >
-                        {{ article.description }}
-                    </p>
-                    <p class="text-white mt-14 text-md italic">
-                        Dernière mise à jour le :
-                        {{ formatDate(article.updatedAt) }}
-                    </p>
-                </div>
-            </section>
-            <WaveBlog/>
-        </div>
+        <SeoHead :title="article.title" :description="article.description" :image="article.img"/>
+        <Header :title="article.title" wave="wave-blog">
+            <p
+                class="text-white mt-14 text-lg text-left max-w-3xl mx-auto"
+            >
+                {{ article.description }}
+            </p>
+            <p class="text-white mt-14 text-md italic">
+                Dernière mise à jour le :
+                {{ formatDate(article.updatedAt) }}
+            </p>
+        </Header>
         <section>
             <div class="container mx-auto pt-40 mt-20 px-5 md:px-0">
                 <nuxt-content :document="article" class="max-w-3xl mx-auto" />
@@ -100,6 +93,11 @@ export default {
             const options = { year: "numeric", month: "long", day: "numeric" };
             return new Date(date).toLocaleString("fr", options);
         },
+    },
+    head() {
+        return {
+            title: this.article.title,
+        };
     },
 };
 </script>

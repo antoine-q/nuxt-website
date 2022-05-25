@@ -1,18 +1,8 @@
 <template>
     <main>
         <SeoHead :title="contactData.seo.title" :description="contactData.seo.description" :image="contactData.seo.image"/>
-        <div class="group relative">
-            <section class="bg-green-300">
-                <div
-                    class="container mx-auto max-w-6xl py-16 px-4 xl:px-0 md:py-20 text-center md:text-left"
-                >
-                    <h1 class="font-black text-white text-4xl md:text-5xl">
-                        Contact
-                    </h1>
-                </div>
-            </section>
-            <WaveContact/>
-        </div>
+        <Header title="Contact" wave="wave-contact">
+        </Header>
         <section>
             <div class="container mx-auto py-16 md:py-40">
                 <h2 class="font-black text-3xl md:text-4xl mb-10 text-center">
