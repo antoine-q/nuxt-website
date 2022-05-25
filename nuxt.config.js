@@ -1,5 +1,5 @@
 export default {
-    modules: ['@nuxt/content'],
+    modules: ['@nuxt/content','@nuxtjs/gtm'],
     target: 'static',
     buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
     components: true,
@@ -11,6 +11,9 @@ export default {
             }
         }
     },
+    plugins: [
+        '~/plugins/gtm.js'
+    ],
     head: {
         meta: [
             {charset : 'utf-8'},

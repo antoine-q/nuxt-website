@@ -3,5 +3,8 @@
         <Navbar/>
         <Nuxt/>
         <Footer/>
+        <client-only>
+            <CookieBar/>
+        </client-only>
     </div>
 </template>
