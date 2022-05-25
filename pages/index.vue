@@ -58,7 +58,7 @@
                                     params: { slug: article.slug },
                                 }"
                             >
-                                <img :src="article.img" class="w-full" />
+                                <img :src="article.img" :alt="article.title" class="w-full" />
                             </NuxtLink>
                             <div class="p-4">
                                 <NuxtLink

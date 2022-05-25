@@ -1,17 +1,25 @@
 <template>
     <nav class="filter mt-0 md:my-2 static w-full bg-white drop-shadow-sm md:drop-shadow-none">
         <div class="container mx-auto flex flex-wrap flex-col max-w-6xl md:flex-row justify-end">
-            <ul class="desktop-nav hidden md:flex flex-wrap flex-row justify-end">
+            <ul class="desktop-nav py-2 hidden md:flex flex-wrap flex-row justify-end">
+                <li>
                 <NuxtLink to="/" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
-                <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
-                    >Blog</NuxtLink
-                >
-                <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
-                    >À propos</NuxtLink
-                >
-                <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
-                    >Contact</NuxtLink
-                >
+                </li>
+                <li>
+                    <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                        >Blog</NuxtLink
+                    >
+                </li>
+                <li>
+                    <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                        >À propos</NuxtLink
+                    >
+                </li>
+                <li>
+                    <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                        >Contact</NuxtLink
+                    >
+                </li>
             </ul>
             <div class="md:hidden flex items-center my-4 w-min self-end">
                 <button class="outline-none mobile-menu-button" v-on:click="toggle_mobile_menu()">
@@ -32,17 +40,29 @@
             
         </div>
         <div class="hidden mobile-menu transition-all ease-in-out duration-150 w-full">
-                <ul class="flex flex-wrap    flex-col justify-center text-center">
-                <NuxtLink to="/" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
-                <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                <ul class="flex flex-wrap  flex-col justify-center text-center">
+                    <li>
+                <NuxtLink to="/" class="block p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
+
+                    </li>
+                    <li>
+
+                <NuxtLink to="/blog" class="block p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >Blog</NuxtLink
                 >
-                <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                    </li>
+                    <li>
+                <NuxtLink to="/about" class="block p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
                     >À propos</NuxtLink
                 >
-                <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
-                    >Contact</NuxtLink
-                >
+
+                    </li>
+                    <li>
+
+                    <NuxtLink to="/contact" class="block p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                        >Contact</NuxtLink
+                    >
+                    </li>
             </ul>
         </div>
     </nav>
