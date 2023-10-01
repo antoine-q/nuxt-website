@@ -13,18 +13,6 @@
                     </h2>
                 </div>
             </div>
-            <div
-                class="container max-w-6xl mx-auto flex flex-wrap md:flex-row flex-col items-center"
-            >
-                <Realisation
-                    v-for="realisation in realisations"
-                    :key="realisation.title"
-                    :title="realisation.title"
-                    :description="realisation.description"
-                    :link="realisation.link"
-                    :img="realisation.img"
-                />
-            </div>
         </section>
         <section id="technos">
             <div

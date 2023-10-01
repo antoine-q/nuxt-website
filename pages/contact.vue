@@ -22,7 +22,7 @@
                         type="text"
                         name="name"
                         id="firstname"
-                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300 rounded-md"
+                        class="p-2 m-2 border-2 border-primary focus:outline-none focus:ring-2 focus:ring-accent rounded-md"
                     />
                     <label for="email" class="mt-3 ml-3 text-xl font-bold"
                         >Email :</label
@@ -31,7 +31,7 @@
                         type="email"
                         name="email"
                         id="email"
-                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300 rounded-md"
+                        class="p-2 m-2 border-2 border-primary focus:outline-none focus:ring-2 focus:ring-accent rounded-md"
                     />
                     <label for="message" class="mt-3 ml-3 text-xl font-bold"
                         >Message :</label
@@ -39,14 +39,14 @@
                     <textarea
                         name="message"
                         id="message"
-                        class="p-2 m-2 border-2 border-green-500 focus:outline-none focus:ring-2 focus:ring-green-300 rounded-md"
+                        class="p-2 m-2 border-2 border-primary focus:outline-none focus:ring-2 focus:ring-accent rounded-md"
                         rows="10"
                     ></textarea>
                     <div data-netlify-recaptcha="true"></div>
                     <input
                         type="submit"
                         value="Envoyer "
-                        class="transition cursor-pointer duration-300 ease-in-out inline-block mt-5 m-2 px-8 py-2 rounded-lg text-lg font-bold bg-green-500 text-white hover:bg-green-600 active:bg-grey-100"
+                        class="transition cursor-pointer duration-300 ease-in-out inline-block mt-5 m-2 px-8 py-2 rounded-lg text-lg font-bold bg-primary text-white hover:bg-green-600 active:bg-grey-100"
                     />
                 </form>
             </div>

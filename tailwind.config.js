@@ -10,8 +10,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Lato", ...defaultTheme.fontFamily.sans]
+        sans: ["Lato", ...defaultTheme.fontFamily.sans],
+        mono: ["Roboto Mono",...defaultTheme.fontFamily.sans]
       },
+      colors:{
+        primary:"#9F96FF",
+        accent:"#F538B9",
+        dark:"#00072D",
+        light:"#DCF4FC",
+      }
     },
   },
   variants: {

@@ -2,20 +2,17 @@ seo:
   title: Développeur web fullstack à Troyes en Champagne, France - Antoine Queru
   description: Antoine Queru, développeur web front end et back end à Troyes en Champagne. Développement de sites Internet, Landing pages et application Web
   image: favicon/android-chrome-512x512.png
-title: "Antoine Queru"
+title: "Antoine <br> Queru"
 description: |
-  <p class="text-white text-lg">
-    👋 Salut, je m'appelle Antoine, développeur web dans l'Aube à Troyes.
-  </p>
-  <p class="text-white mt-5 text-lg">
-    Je développe tout types de sites Internet. Je met un point d'honneur à optimiser l'interface utilisateur et le temps de chargement des sites Internet que je développe.
+  <p>
+    Non vous n'êtes pas nuls en informatique !
   </p>
 button: "Contactez moi !"
 section-1-title: "À propos"
 section-1-content: |
-  <p>Diplômé de l'Université de technologie de Troyes et spécialisé en Informatique et Systèmes d'Information, j'adore créer des sites uniques rapides et responsives.</p>
-  <p class="mt-5">J'affectionne créer tout type de sites Internet, de la simple landing page a l'application web complexe.</p>
-  <p class="mt-5">Actuellement, je travaille pour une agence de communication sur Troyes.</p>
+  <p>
+    Vous êtes indépendant ou vous lancez votre business et vous souhaitez simplement avoir une présence sur internet pour rassurer vos clients et mettre en avant votre activité. Un simple site internet de quelques pages non administrables peut largement suffire. Ne site n’étant pas administrable vous n’aurez pas de souci avec la gestion du contenu de celui- ci. De plus, pas besoin de s’embêter avec une base de données. Cerise sur le gâteau, ces sites sont fiables et demandent très peu d’entretien.
+  </p>
 section-1-img: img/antoine.png
 section-2-title: "Technos"
 section-2-btn: "Voir tout"

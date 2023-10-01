@@ -1,15 +1,19 @@
 <template>
     <nav class="filter mt-0 md:my-2 static w-full bg-white drop-shadow-sm md:drop-shadow-none">
-        <div class="container mx-auto flex flex-wrap flex-col max-w-6xl md:flex-row justify-end">
+        <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-between">
+            <NuxtLink to="/" class="flex items-center justify-center">
+                    <img src="/img/logo_antoine.png" alt="" class="block w-10">
+                </NuxtLink
+                >
             <ul class="desktop-nav hidden md:flex flex-wrap flex-row justify-end">
-                <NuxtLink to="/" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
-                <NuxtLink to="/blog" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                <NuxtLink to="/" class="p-3 hover:text-primary transition duration-300 ease-in-out font-bold text-lg">Antoine</NuxtLink>
+                <NuxtLink to="/blog" class="p-3 hover:text-primary transition duration-300 ease-in-out font-bold text-lg"
                     >Blog</NuxtLink
                 >
-                <NuxtLink to="/about" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                <NuxtLink to="/about" class="p-3 hover:text-primary transition duration-300 ease-in-out font-bold text-lg"
                     >À propos</NuxtLink
                 >
-                <NuxtLink to="/contact" class="p-3 hover:text-green-500 transition duration-300 ease-in-out font-bold text-lg"
+                <NuxtLink to="/contact" class="p-3 hover:text-primary transition duration-300 ease-in-out font-bold text-lg"
                     >Contact</NuxtLink
                 >
             </ul>
@@ -50,7 +54,7 @@
 
 <style scoped>
 .desktop-nav a.nuxt-link-exact-active{
-    color: #10b981;
+    @apply text-primary;
 }
 </style>
 
