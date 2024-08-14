@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoine Queru</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section>
+        <h1>Antoine Queru</h1>
+        <p>
+            Bonjour moi c'est Antoine.
+        </p>
+        <p>Bienvenue sur mon site</p>
+    </section>
+    <section>
+        <h2>A propos</h2>
+        <p>Je suis ingénieur en informatique.</p>
+    </section>
+    <section>
+        <img src="https://raw.githubusercontent.com/softwarehistorysociety/XPIcons/main/XP/FloppyDisk.png" alt="contact" width="50" height="50">
+        <h3>Mes compétences</h3>
+        <p>
+            Mes différentes expériences m'ont permises d'acquiérir les compétences suivantes :
+            <ul>
+                <li>Faire des sites élégants (ça se voit);</li>
+                <li>Gérer (au mieux) des serveurs linux (ubuntu, debian, centos);</li>
+                <li>Gérer (au mieux) des projets;</li>
+                <li>Créer et maintenir des bases de données SQL;</li>
+            </ul>
+        </p>
+        <p>
+            Voici les différentes technologies que j'apprécie : 
+            <ul>
+                <li><b>php</b>, ça fonctionne, et quand on dev proprement il n'y a pas besoin de plus</li>
+                <li><b>javascript</b>, sauf quand il faut débugger</li>
+                <li><b>python</b>, pratique pour la data analyse</li>
+                <li><b>mysql, postgres</b>, qui a vraiement besoin d'une base de données NoSQL (je connais quand même MongoDB)</li>
+                <li><b>bash</b>, pas besoin de perdre du temps avec un interface graphique</li>
+                <li><b><s>Les expressions régulières</s></b></li>
+                <li><b><s>Faire des templates d'email</s></b></li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <img src="https://raw.githubusercontent.com/softwarehistorysociety/XPIcons/main/XP/Favorites.png" alt="contact" width="50" height="50">
+        <h3>Mes hobbies</h3>
+        <p>
+            <ul>
+                <li>La photographie</li>
+                <li>La guitare et le piano</li>
+                <li>Internet</li>
+                <li>La cuisine</li>
+                <li>La course a pieds, la randonnée, et le vélo</li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <img src="https://raw.githubusercontent.com/softwarehistorysociety/XPIcons/main/XP/UserAccounts.png" alt="contact" width="50" height="50">
+        <h2>Contact</h2>
+        <p>Pour me contacter : <a id="contact"></a></p>
+        <p>ou via le formualaire ci-dessous :</p>
+        <form onsubmit="return false;" id="contact-form" action="https://formspree.io/f/xvgpqppl" method="POST">
+            <i>
+                <span id="info"></span>
+            </i>
+            <p>
+                <label for="email">Votre email</label><br>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="name">Votre nom</label><br>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="message">Votre message</label><br>
+                <textarea name="message" id="message" placeholder="Je trouve votre site très beau..." rows="10" cols="50"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Envoyer">
+            </p>
+            <p>
+                <sub><i>Bien qu'austère, ce formulaire fonctionne.</i></sub>
+            </p>
+
+
+        </form>
+    </section>
+    <p><i>&copy;&nbsp;Antoine Queru <span id="date"></span></i></p>
+    <script src="index.js"></script>
+        <!-- Ho ho ho  -->
+        <!-- Ce site est bien moche -->
+         <!-- Je vous assure que je sais aussi faire des beaux sites,  -->
+</body>
+</html>
